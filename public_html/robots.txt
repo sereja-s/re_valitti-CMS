@@ -1,0 +1,5 @@
+User-agent: *
+ 
+Disallow:/admin/ 
+
+Sitemap: https://dss-krovlya.ru/sitemap.xml
