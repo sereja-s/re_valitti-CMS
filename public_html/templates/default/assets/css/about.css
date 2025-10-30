@@ -10,6 +10,7 @@
   position: sticky;
   mix-blend-mode: lighten;
   top: 0;
+  padding-top: 7rem;
 }
 .about__main {
   display: grid;
@@ -57,23 +58,24 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: url("../assets/img/noise.webp") 0 0 repeat;
+  background: url("../../assets/img/noise.webp") 0 0 repeat;
 }
 .awards-about__title {
   text-transform: uppercase;
-  font-size: 0.8125rem;
-  line-height: 1.6;
-  font-family: "Satoshi", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  /* font-family: "Satoshi", sans-serif; */
   letter-spacing: 0.09375rem;
+  /* padding-top: 1rem; */
 }
 .awards-about__table {
   border-collapse: collapse;
-  color: rgba(218, 197, 167, 0.8);
-  font-family: "Satoshi", sans-serif;
+  color: #000;
+  /* font-family: "Satoshi", sans-serif; */
 }
 .awards-about__line td {
-  padding-block: 1.5rem;
-  border-bottom: 0.0625rem solid rgba(218, 197, 167, 0.15);
+  padding-block: 0.3rem;
+  border-bottom: 0.12rem solid rgb(255, 182, 143);
 }
 .awards-about__line:first-child td {
   padding-top: 0;
@@ -85,15 +87,16 @@
 .awards-about__label {
   width: 100%;
   padding-right: 0.625rem;
-  line-height: 1.4;
-  font-size: 1.25rem;
+  line-height: 1.2;
+  font-size: 1.15rem;
   font-weight: 300;
 }
 .awards-about__value {
   vertical-align: top;
-  font-size: 0.8125rem;
-  line-height: 1.6;
+  font-size: 1.15rem;
+  line-height: 1.2;
   letter-spacing: 0.09375rem;
+  padding-right: 0.35rem;
 }
 @media (max-width: 47.99875em) {
   .about__header {
@@ -145,13 +148,16 @@
     padding-bottom: clamp( 1.875rem , -0.46734234234375rem  +  11.7117117117vw , 10rem );
   }
   .about__container {
-    column-gap: clamp( 1.875rem , 0.9740990991rem  +  4.5045045045vw , 5rem );
+    column-gap: clamp( 1.875rem , 0.9740990991rem  +  4.5045045045vw , 1rem );
   }
   .about__body {
     padding-top: clamp( 0.625rem , -0.347972972975rem  +  4.8648648649vw , 4rem );
   }
+  .about__image {
+    padding-top: clamp( 0.625rem , -0.347972972975rem  +  4.8648648649vw , 4rem );
+  }
   .about__header:not(:last-child) {
-    margin-bottom: clamp( 2.5rem , 0.9144144144125rem  +  7.9279279279vw , 8rem );
+    margin-bottom: clamp( 2.5rem , 0.9144144144125rem  +  7.9279279279vw , 2rem );
   }
   .about__blockhead:not(:last-child) {
     margin-bottom: clamp( 1.25rem , 0.45720720720625rem  +  3.963963964vw , 4rem );
@@ -163,7 +169,7 @@
     font-size: clamp( 2rem , 1.7117117117125rem  +  1.4414414414vw , 3rem );
   }
   .awards-about {
-    padding: clamp( 1.25rem , 0.74549549549375rem  +  2.5225225225vw , 3rem );
+    padding: clamp( 1.25rem , 0.74549549549375rem  +  2.5225225225vw , 2rem );
   }
   .awards-about__title:not(:last-child) {
     margin-bottom: clamp( 1.25rem , 1.03378378378125rem  +  1.0810810811vw , 2rem );

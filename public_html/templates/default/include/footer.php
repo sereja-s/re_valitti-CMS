@@ -67,10 +67,18 @@
 					</ul>
 				</div>
 				<div class="body-footer__menu">
+					<h5 class="body-footer__title">График работы</h5>
+					<ul class="body-footer__list">
+						<li class="body-footer__item">
+							<p class="body-footer__link">с 8 до 17<br><br>Суббота, воскресенье - выходной<br></p>
+						</li>
+					</ul>
+				</div>
+				<div class="body-footer__menu">
 					<h5 class="body-footer__title">РЕКВИЗИТЫ</h5>
 					<ul class="body-footer__list">
 						<li class="body-footer__item">
-							<a href="#" class="body-footer__link"> ОГРН 1229300036790<br>ИНН 9303005685<br>КПП 930301001</a>
+							<p class="body-footer__link"> ОГРН 1229300036790<br>ИНН 9303005685<br>КПП 930301001</p>
 						</li>
 					</ul>
 				</div>

@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="shortcut icon" href="./assets/img/favicon.ico">
+
 	<title>Cалон красоты в Донецке Ре Валитти</title>
 
 
@@ -104,7 +104,7 @@
 						}
 
 						.sub-menu__list>li {
-							background-color: rgba(255, 135, 70, 0.85);
+							background-color: rgba(255, 135, 70);
 							backdrop-filter: blur(1.875rem);
 
 						}

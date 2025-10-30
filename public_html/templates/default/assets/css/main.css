@@ -602,7 +602,7 @@ body {
   text-transform: uppercase;
 }
 .blockhead__title {
-  font-weight: 300;
+  font-weight: 300;  
 }
 .blockhead__title span {
   font-family: "Gambetta", serif;
@@ -823,7 +823,7 @@ body {
     row-gap: clamp( 1.25rem , 0.8896396396375rem  +  1.8018018018vw , 2.5rem );
   }
   .body-footer__list {
-    padding-top: clamp( 1.25rem , 1.03378378378125rem  +  1.0810810811vw , 2rem );
+    padding-top: clamp( 0.25rem , 1.03378378378125rem  +  1.0810810811vw , 0.77rem );
   }
   /* .content-footer {
     gap: clamp( 1.25rem , 0.8355855855875rem  +  2.0720720721vw , 2.6875rem );
@@ -844,7 +844,7 @@ body {
     gap: clamp( 0.5rem , 0.35585585585625rem  +  0.7207207207vw , 1rem );
   }
   .blockhead__title {
-    font-size: clamp( 2.8125rem , 1.31700450450625rem  +  7.4774774775vw , 8rem );
+    font-size: clamp( 1.8125rem , 1.31700450450625rem  +  3.4774774775vw , 8rem );
   }
   .blockhead__title--size-96 {
     font-size: clamp( 2.375rem , 0.1768018018rem  +  10.990990991vw , 8rem );
@@ -907,9 +907,9 @@ body {
   .body-footer__list {
     padding-top: 2rem;
   }
-  .content-footer {
+  /* .content-footer {
     gap: 2.6875rem;
-  }
+  } */
   .button--text-big::before {
     font-size: 0.9375rem;
   }
@@ -926,7 +926,7 @@ body {
     gap: 1rem;
   }
   .blockhead__title {
-    font-size: 8rem;
+    font-size: 5rem;
   }
   /* .blockhead__title--size-96 {
     font-size: 10rem;
@@ -964,7 +964,7 @@ body {
     background-color: transparent;
   }
   .button--text:hover::before {
-    background-color: rgb(253, 176, 68);
+    background-color: rgb(255, 182, 143);
     color: #f9efe1;
   }
 }@media (any-hover: hover) and (any-pointer: fine) {

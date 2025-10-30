@@ -75,6 +75,8 @@ const USER_CSS_JS = [
 		'assets/css/swiper.css',
 		'assets/css/index.css',
 		'assets/css/work2.css',
+		'assets/css/about.css',
+		'assets/css/socialblocks.css',
 	],
 	'scripts' => [
 		'assets/js/app.js',
