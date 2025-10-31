@@ -265,7 +265,7 @@
 }
 .author-review__avatar {
   aspect-ratio: 1;
-  width: 3.75rem;
+  max-width: 3.75rem;
   flex-shrink: 0;
   object-fit: cover;
   border-radius: 50%;
@@ -274,7 +274,7 @@
   align-items: center;
 }
 .author-review__name {
-  color: rgba(218, 197, 167, 0.8);
+  color:coral;
   font-size: 0.8125rem;
   text-transform: uppercase;
   letter-spacing: 0.09375rem;

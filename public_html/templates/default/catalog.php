@@ -1,6 +1,6 @@
 <?php if (!empty($data)) :  ?>
 
-	<article style="padding-top: 7.7rem" class="about">
+	<article style="padding-top: 7.7rem;  padding-bottom: 5rem;" class="about">
 		<div class="about__container">
 			<figure data-fls-dynamic=".about__header, 768, 1" class="about__picture">
 				<picture>
