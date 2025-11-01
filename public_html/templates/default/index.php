@@ -103,77 +103,25 @@
 			</h3>
 			<!-- <a href="#" data-fls-button="" class="selected-work__button button button--text button--icon-arrow button--arrow-ru">See All</a> -->
 		</div>
-		<div class="selected-work__items works">
-			<article data-fls-work="" class="item-work">
-				<a href="#" class="item-work__picture">
-					<picture>
-						<img class="item-work__image" alt="Image" src="<?= PATH . TEMPLATE ?>/assets/img/work/парикмахер для женщин.jpg">
-					</picture>
-				</a>
-				<div class="item-work__body">
-					<h5 class="item-work__name">
-						<a href="#" class="item-work__link-name">Парикмахер-стилист для леди</a>
-					</h5>
-					<!-- <a class="item-work__category" href="NaN"></a> -->
-				</div>
-			</article>
-			<article data-fls-work="" class="item-work">
-				<a href="#" class="item-work__picture">
-					<picture>
-						<!-- <source media="(max-width: 600px)" srcset="<?= PATH . TEMPLATE ?>/assets/img/work/02-600.webp" type="image/webp"> -->
-						<img class="item-work__image" alt="Image" src="<?= PATH . TEMPLATE ?>/assets/img/work/парикмахер для мужчин.jpg">
-					</picture>
-				</a>
-				<div class="item-work__body">
-					<h5 class="item-work__name">
-						<a href="#" class="item-work__link-name">Парикмахер-стилист для джентельмена</a>
-					</h5>
-					<!-- <a class="item-work__category" href="NaN">Webdesign</a> -->
-				</div>
-			</article>
-			<article data-fls-work="" class="item-work">
-				<a href="#" class="item-work__picture">
-					<picture>
-						<!-- <source media="(max-width: 600px)" srcset="<?= PATH . TEMPLATE ?>/assets/img/work/03-600.webp" type="image/webp"> -->
-						<img class="item-work__image" alt="Image" src="<?= PATH . TEMPLATE ?>/assets/img/work/парикмахер для детей.jpg">
-					</picture>
-				</a>
-				<div class="item-work__body">
-					<h5 class="item-work__name">
-						<a href="#" class="item-work__link-name">Парикмахер-стилист для ребёнка</a>
-					</h5>
-					<!-- <a class="item-work__category" href="NaN">Webdesign</a> -->
-				</div>
-			</article>
-			<article data-fls-work="" class="item-work">
-				<a href="#" class="item-work__picture">
-					<picture>
-						<!-- <source media="(max-width: 600px)" srcset="<?= PATH . TEMPLATE ?>/assets/img/work/04-600.webp" type="image/webp"> -->
-						<img class="item-work__image" alt="Image" src="<?= PATH . TEMPLATE ?>/assets/img/work/на главную_салон_красоты-мин.jpg">
-					</picture>
-				</a>
-				<div class="item-work__body">
-					<h5 class="item-work__name">
-						<a href="#" class="item-work__link-name">Ногтевой сервис</a>
-					</h5>
-					<!-- <a class="item-work__category" href="NaN">Webdesign</a> -->
-				</div>
-			</article>
-			<article data-fls-work="" class="item-work">
-				<a href="#" class="item-work__picture">
-					<picture>
-						<!-- <source media="(max-width: 600px)" srcset="<?= PATH . TEMPLATE ?>/assets/img/work/04-600.webp" type="image/webp"> -->
-						<img class="item-work__image" alt="Image" src="<?= PATH . TEMPLATE ?>/assets/img/work/услуги бровиста.jpg">
-					</picture>
-				</a>
-				<div class="item-work__body">
-					<h5 class="item-work__name">
-						<a href="#" class="item-work__link-name">Услуги бровиста</a>
-					</h5>
-					<!-- <a class="item-work__category" href="NaN">Webdesign</a> -->
-				</div>
-			</article>
-		</div>
+		<?php if (!empty($this->menu['catalog'])) : ?>
+			<div class="selected-work__items works">
+				<?php foreach ($this->menu['catalog'] as $item) : ?>
+					<article data-fls-work="" class="item-work">
+						<a href="<?= $this->alias(['catalog' => $item['alias']]) ?>" class="item-work__picture">
+							<picture>
+								<img class="item-work__image" alt="<?= $item['name'] ?>" src="<?= $this->img($item['img']) ?>">
+							</picture>
+						</a>
+						<div class="item-work__body">
+							<h5 class="item-work__name">
+								<a href="<?= $this->alias(['catalog' => $item['alias']]) ?>" class="item-work__link-name"><?= $item['name'] ?></a>
+							</h5>
+							<!-- <a class="item-work__category" href="NaN"></a> -->
+						</div>
+					</article>
+				<?php endforeach; ?>
+			</div>
+		<?php endif; ?>
 	</div>
 </section>
 

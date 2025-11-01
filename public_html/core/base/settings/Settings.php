@@ -107,7 +107,7 @@ class Settings
 		// массив вида: 'название шаблона' => массив с полями для которых должен быть подключен соответствующий шаблон
 		'text' => ['name', 'phone', 'email', 'alias', 'external_alias', 'sub_title', 'number_of_years', 'discount', 'price', 'price_m_opt', 'login', 'password'],
 		'textarea' => ['content', 'keywords', 'address', 'description', 'short_content'],
-		'radio' => ['visible', 'show_top_menu', 'hit', 'new'/*'sale', 'hot'*/],
+		'radio' => ['visible', 'show_top_menu', 'ot', 'new'],
 		'checkboxlist' => ['filters', 'filters_test'], // указали, что хотим подключить фильтры к связанной таблице: 
 		// товары (они прописаны в массиве: в свойстве: private $manyToMany)
 		'select' => ['menu_position', 'parent_id'],
@@ -140,7 +140,7 @@ class Settings
 		'short_content' => ['Краткое описание'],
 		'img_years' => ['Изображение количества лет на рынке'],
 		'number_of_years' => ['год'],
-		'hit' => ['Хит продаж'],
+		'ot' => ['от', '(включить если цена не конкретная)'],
 		'sale' => ['Акция'],
 		'new' => ['Новинка'],
 		'hot' => ['Горячее предложение'],
@@ -158,7 +158,7 @@ class Settings
 	private $radio = [
 		'visible' => ['НЕТ', 'ДА', 'default' => 'ДА'],
 		'show_top_menu' => ['НЕТ', 'ДА', 'default' => 'ДА'],
-		'hit' => ['НЕТ', 'ДА', 'default' => 'НЕТ'],
+		'ot' => ['НЕТ', 'ДА', 'default' => 'НЕТ'],
 		'sale' => ['НЕТ', 'ДА', 'default' => 'НЕТ'],
 		'new' => ['НЕТ', 'ДА', 'default' => 'НЕТ'],
 		'hot' => ['НЕТ', 'ДА', 'default' => 'НЕТ'],
@@ -193,8 +193,8 @@ class Settings
 		'discount' => ['int' => true],
 		'login' => ['empty' => true, 'trim' => true],
 		'password' => ['crypt' => true, 'empty' => true],
-		'keywords' => ['count' => 400, 'trim' => true],
-		'description' => ['count' => 255, 'trim' => true]
+		'keywords' => ['count' => 1400, 'trim' => true],
+		'description' => ['count' => 1400, 'trim' => true]
 	];
 
 	// Объявим метод, который будет возвращать указанные выше свойства

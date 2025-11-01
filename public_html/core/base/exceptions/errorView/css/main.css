@@ -120,15 +120,8 @@ body {
 	 }
 
 .b_grd {
-  background: #3bac63;
-  /* fallback for old browsers */
-  /* background: -webkit-linear-gradient(to top, #b31217, #e52d27); */
-  /* Chrome 10-25, Safari 5.1-6 */
-  /* background: -webkit-gradient(linear, left bottom, left top, from(#b31217), to(#e52d27));
-  background: -webkit-linear-gradient(bottom, #b31217, #e52d27);
-  background: -o-linear-gradient(bottom, #b31217, #e52d27); */
-  /* background: linear-gradient(to top, #3bac63, #d8f3dc); */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  background: rgb(255, 182, 143);
+  }
 
 .rotate_sybml {
   font-size: 140px !important;

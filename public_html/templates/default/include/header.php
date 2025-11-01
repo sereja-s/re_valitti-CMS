@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
@@ -24,33 +24,32 @@
 						<nav class="menu__body">
 							<ul class="menu__list">
 
-								<li class="menu__item">
-									<a href="#" class="menu__link">Услуги</a>
-									<span class="menu__arrow arrow"></span>
-									<ul class="sub-menu__list">
-										<li>
-											<a href="" class="sub-menu__link">Парикмахер-стилист для леди</a>
-										</li>
-										<li>
-											<a href="" class="sub-menu__link">Парикмахер-стилист для джентельмена</a>
-										</li>
-										<li>
-											<a href="" class="sub-menu__link">Парикмахер-стилист для детей</a>
-										</li>
-										<li>
-											<a href="" class="sub-menu__link">Ногтевой сервис</a>
-										</li>
-										<li>
-											<a href="" class="sub-menu__link">Услуги бровиста</a>
-										</li>
-									</ul>
-								</li>
+								<?php if (!empty($this->menu['catalog'])) : ?>
+
+									<li class="menu__item">
+										<a href="#" class="menu__link">Услуги</a>
+										<span class="menu__arrow arrow"></span>
+										<ul class="sub-menu__list">
+
+											<?php foreach ($this->menu['catalog'] as $item) : ?>
+
+												<li>
+													<a href="<?= $this->alias(['catalog' => $item['alias']]) ?>" class="sub-menu__link"><?= $item['name'] ?></a>
+												</li>
+
+											<?php endforeach; ?>
+
+										</ul>
+									</li>
+
+								<?php endif; ?>
+
 								<li class="menu__item">
 									<a href="work.html" class="menu__link">О нас</a>
 								</li>
-								<li class="menu__item">
+								<!-- <li class="menu__item">
 									<a href="services.html" class="menu__link">Контакты</a>
-								</li>
+								</li> -->
 								<li class="menu__item">
 									<a href="#" class="menu__link">Фотогалерея</a>
 									<span class="menu__arrow arrow"></span>
@@ -76,7 +75,6 @@
 							</ul>
 						</nav>
 					</div>
-
 
 					<style>
 						.menu__body a.parent {
@@ -153,8 +151,6 @@
 							}
 						}
 					</style>
-
-
 
 					<a href="contacts" data-fls-button="" class="header__button button button--lite">Позвонить</a>
 					<button type="button" data-fls-menu="" class="icon-menu">

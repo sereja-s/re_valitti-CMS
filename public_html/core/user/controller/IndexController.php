@@ -58,7 +58,7 @@ class IndexController extends BaseUser
 
 		];
 
-		$goods = [];
+		/* $goods = [];
 
 		foreach ($arrHits as $type => $item) {
 
@@ -68,7 +68,7 @@ class IndexController extends BaseUser
 				'order_direction' => ['DESC'],
 				'limit' => 7 // выводим не более 7 товаров у которых включены соответствующие предложения
 			]);
-		}
+		} */
 
 		$questions = $this->model->get('questions', [
 			'where' => ['visible' => 1],

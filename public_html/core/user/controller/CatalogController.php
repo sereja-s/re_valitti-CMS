@@ -75,8 +75,9 @@ class CatalogController extends BaseUser
 			// +Выпуск №132
 			'operand' => $operand,
 			// +Выпуск №131
-			'order' => $orderDb['order'],
-			'order_direction' => $orderDb['order_direction'],
+			/* 'order' => $orderDb['order'], */
+			'order' => ['menu_position'],
+			/* 'order_direction' => $orderDb['order_direction'], */
 			// +Выпуск №135
 			'pagination' => [
 				'qty' => $_SESSION['quantities'] ?? QTY,

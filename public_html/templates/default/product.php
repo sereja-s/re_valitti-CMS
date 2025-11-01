@@ -42,7 +42,7 @@
 					<div class="item-product__body">
 						<div class="item-product__content">
 							<h3 class="item-product__title"><?= $data['name'] ?></h3>
-							<div class="item-product__text"><?= $data['short_content'] ?></div>
+							<div style="font-size: 1.5rem;" class="item-product__text"><?= $data['content'] ?></div>
 
 							<div class="item-product__text">Цена:</div>
 
@@ -55,7 +55,7 @@
 								<div class="item-product__price item-product__price_old">мелкий опт</div>
 							</div>
 
-							<div class="item-product__text" style="padding-top: 15px;"><?= $data['content'] ?></div>
+							<div class="item-product__text" style="padding-top: 15px;"><?= $data['keywords'] ?></div>
 						</div>
 
 					</div>
