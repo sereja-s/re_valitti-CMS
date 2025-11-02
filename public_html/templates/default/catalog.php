@@ -6,7 +6,7 @@
 			<figure data-fls-dynamic=".about__header, 768, 1" class="about__picture">
 				<picture>
 
-					<img class="about__image" alt="Image" src="<?= PATH . TEMPLATE ?>/assets/img/top-section/Бел-мин (6).svg">
+					<img class="about__image" alt="Image" src="<?= $this->img($data['img']) ?>">
 				</picture>
 			</figure>
 			<div class="about__body">

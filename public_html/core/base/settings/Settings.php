@@ -189,7 +189,7 @@ class Settings
 	// свойство, в котором будет храниться массив полей, которые мы будем валидировать
 	private $validation = [
 		'name' => ['empty' => true, 'trim' => true],
-		'price' => ['int' => true],
+		/* 'price' => ['int' => true], */
 		'discount' => ['int' => true],
 		'login' => ['empty' => true, 'trim' => true],
 		'password' => ['crypt' => true, 'empty' => true],

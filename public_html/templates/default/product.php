@@ -1,70 +1,77 @@
 <?php if (!empty($data)) :  ?>
 
-	<section class="page__products products">
-
-		<div class="products__container _container">
-
-			<h1 style="margin-top: 100px;" class="products__title _title"><?= $data['name'] ?></h1>
-
-			<div class="products__items">
-
-				<article class="products__item item-product">
-
-					<!-- <div class="item-product__labels">
-
-						<?php if (!empty($data['new'])) : ?>
-
-							<div class="item-product__label item-product__label_new">New</div>
-
-						<?php endif; ?>
-
-						<?php if (!empty($data['discount'])) : ?>
-
-							<div class="item-product__label item-product__label_sale">-<?= $data['discount'] ?>%</div>
-
-						<?php endif; ?>
-
-					</div> -->
-
-					<!-- <div class="item-product__labels--prem">
-
-						<?php if (!empty($data['hit'])) : ?>
-
-							<div class="item-product__label--prem">Хит продаж</div>
-
-						<?php endif; ?>
-
-					</div> -->
-
-					<a href="#" class="item-product__image _ibg">
-						<img src="<?= $this->img($data['img']) ?>" alt="<?= $data['name'] ?>">
-					</a>
-					<div class="item-product__body">
-						<div class="item-product__content">
-							<h3 class="item-product__title"><?= $data['name'] ?></h3>
-							<div style="font-size: 1.5rem;" class="item-product__text"><?= $data['content'] ?></div>
-
-							<div class="item-product__text">Цена:</div>
-
-							<div class="item-product__prices">
-								<div class="item-product__price"><?= $data['price'] ?> руб.</div>
-								<div class="item-product__price item-product__price_old">розница</div>
-							</div>
-							<div class="item-product__prices">
-								<div class="item-product__price"><?= $data['price_m_opt'] ?> руб.</div>
-								<div class="item-product__price item-product__price_old">мелкий опт</div>
-							</div>
-
-							<div class="item-product__text" style="padding-top: 15px;"><?= $data['keywords'] ?></div>
-						</div>
-
-					</div>
-				</article>
-
+	<section class="page__hero-services hero-services">
+		<div class="hero-services__container">
+			<div data-fls-blockhead="" class="hero-services__blockhead blockhead">
+				<h1 class="selected-work__title">
+					<?= $data['name'] ?>
+				</h1>
+				<div class="blockhead__text blockhead__text--size-24">
+					<p>
+						<?= $data['short_content'] ?>
+					</p>
+				</div>
 			</div>
 
 		</div>
+	</section>
+	<!-- <div class="page__stats stats">
+		<div class="stats__container">
+			<article data-fls-watcher="" class="stats__item item-stats">
+				<h5 class="item-stats__title">Clients</h5>
+				<div class="item-stats__value">
+					<span data-fls-digcounter="">150</span>
+					+
+				</div>
+			</article>
+			<article data-fls-watcher="" class="stats__item item-stats">
+				<h5 class="item-stats__title">Clients</h5>
+				<div class="item-stats__value">
+					<span data-fls-digcounter="">300</span>
+					+
+				</div>
+			</article>
+			<article data-fls-watcher="" class="stats__item item-stats">
+				<h5 class="item-stats__title">Clients</h5>
+				<div class="item-stats__value">
+					<span data-fls-digcounter="">100</span>
+					%
+				</div>
+			</article>
+			<article data-fls-watcher="" class="stats__item item-stats">
+				<h5 class="item-stats__title">Clients</h5>
+				<div class="item-stats__value">
+					<span data-fls-digcounter="">100</span>
+					K
+				</div>
+			</article>
+		</div>
+	</div> -->
+	<section class="page__services services">
+		<div class="services__container">
+			<article data-fls-border="" class="services__item item-service">
 
+				<!-- <h2 class="item-service__title">
+					<span class="item-service__link-title">заголовок</span>
+				</h2> -->
+
+				<!-- <div class="item-service__label">Цена, руб.</div> -->
+
+				<div href="#" class="item-service__link-image">
+					<picture>
+						<img class="item-service__image" alt="<?= $data['name'] ?>" src="<?= $this->img($data['img']) ?>">
+					</picture>
+				</div>
+				<div class="item-service__label"><?= ($data['price'] || $data['content']) ? 'Цена, руб.' : '' ?></div>
+				<div class="item-service__price"><?= $data['ot'] ? $data['content'] : $data['price'] ?></div>
+				<div class="item-service__description"><?= $data['description'] ?></div>
+
+
+
+
+			</article>
+
+		</div>
 	</section>
 
 <?php endif; ?>

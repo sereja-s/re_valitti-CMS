@@ -77,6 +77,7 @@ const USER_CSS_JS = [
 		'assets/css/work2.css',
 		'assets/css/about.css',
 		'assets/css/socialblocks.css',
+		'assets/css/services.css',
 	],
 	'scripts' => [
 		'assets/js/app.js',

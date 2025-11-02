@@ -79,11 +79,10 @@ class CatalogController extends BaseUser
 			'order' => ['menu_position'],
 			/* 'order_direction' => $orderDb['order_direction'], */
 			// +Выпуск №135
-			'pagination' => [
+			/* 'pagination' => [
 				'qty' => $_SESSION['quantities'] ?? QTY,
-
 				'page' => $this->clearNum($_GET['page'] ?? 1) ?: 1
-			]
+			] */
 		], $catalogFilters, $catalogPrices);
 
 		// Выпуск №136
