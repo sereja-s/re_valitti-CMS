@@ -172,7 +172,7 @@
     margin-bottom: clamp( 1.875rem , -0.46734234234375rem  +  11.7117117117vw , 10rem );
   }
   .hero-services {
-    padding-top: clamp( 6.25rem , 4.01576576576875rem  +  11.1711711712vw , 14rem );
+    padding-top: clamp( 6.25rem , 4.01576576576875rem  +  11.1711711712vw , 9rem );
   }
   .hero-services__button {
     margin-block: clamp( 1.25rem , 0.45720720720625rem  +  3.963963964vw , 4rem );

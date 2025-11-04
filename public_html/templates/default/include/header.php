@@ -19,7 +19,7 @@
 			<div class="header__container">
 				<div class="header__body">
 					<!-- <img style="max-width: 5rem;" src="<?= PATH . TEMPLATE ?>/assets/img/top-section/Бел-мин (6).svg" alt="Image" class="header__logo"> -->
-					<a href="/" class="header__logo" style="color:rgb(150, 43, 5); font-size: 1.5em; font-weight: 700;">Ре Валитти</a>
+					<a href="/" class="header__logo" style="color:rgb(150, 43, 5); font-size: 1.375rem; font-weight: 500;">РеВалитти</a>
 					<div class="header__menu menu">
 						<nav class="menu__body">
 							<ul class="menu__list">
@@ -47,30 +47,26 @@
 								<li class="menu__item">
 									<a href="work.html" class="menu__link">О нас</a>
 								</li>
-								<!-- <li class="menu__item">
-									<a href="services.html" class="menu__link">Контакты</a>
-								</li> -->
-								<li class="menu__item">
-									<a href="#" class="menu__link">Фотогалерея</a>
-									<span class="menu__arrow arrow"></span>
-									<ul class="sub-menu__list">
-										<li>
-											<a href="" class="sub-menu__link">Женские причёски</a>
-										</li>
-										<li>
-											<a href="" class="sub-menu__link">Мужские стрижки</a>
-										</li>
-										<li>
-											<a href="" class="sub-menu__link">Детские стрижки</a>
-										</li>
-										<li>
-											<a href="" class="sub-menu__link">Ноготочки</a>
-										</li>
-										<li>
-											<a href="" class="sub-menu__link">Бровки</a>
-										</li>
-									</ul>
-								</li>
+
+								<?php if (!empty($this->menu['catalogFotos'])) : ?>
+
+									<li class="menu__item">
+										<a href="" class="menu__link">Фотогалерея</a>
+										<span class="menu__arrow arrow"></span>
+										<ul class="sub-menu__list">
+
+											<?php foreach ($this->menu['catalogFotos'] as $item) : ?>
+
+												<li>
+													<a href="<?= $this->alias(['catalogFoto' => $item['alias']]) ?>" class="sub-menu__link"><?= $item['name'] ?></a>
+												</li>
+
+											<?php endforeach; ?>
+
+										</ul>
+									</li>
+
+								<?php endif; ?>
 
 							</ul>
 						</nav>

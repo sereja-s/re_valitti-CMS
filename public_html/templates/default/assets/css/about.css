@@ -90,17 +90,20 @@
 }
 .awards-about__label {
   width: 100%;
-  padding-right: 0.625rem;
+  padding-right: 0.25rem;
   line-height: 1.2;
-  font-size: 1.15rem;
+  font-size: 1.125rem;
   font-weight: 300;
 }
+
+.awards-about__label span { font-size: 0.875rem;}
+
 .awards-about__value {
   vertical-align: top;
   font-size: 1.15rem;
   line-height: 1.2;
   letter-spacing: 0.09375rem;
-  padding-right: 0.35rem;
+  /* padding-right: 0.35rem; */
 }
 @media (max-width: 47.99875em) {
   .about__header {

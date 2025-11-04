@@ -80,21 +80,16 @@ class Settings
 	// свойство с таблицами, названия которых будут показаны в боковом меню админки
 	private $projectTables = [
 		'sales' => ['name' => 'Акции'],
-		'catalog' => ['name' => 'Каталог (меню)'],
 		//'filters' => ['name' => 'Фильтры'],
-		'goods' => ['name' => 'Товары'],
-		'phones' => ['name' => 'Телефоны'],
-		'emails' => ['name' => 'Эл. почты'],
-		'address' => ['name' => 'Адреса'],
-		//'news' => ['name' => 'Новости'],
-		'information' => ['name' => 'Информация (меню)'],
+		'goods' => ['name' => 'Услуги'],
+		'catalog' => ['name' => 'Каталог (меню)'],
+		'fotos' => ['name' => 'Фото'],
+		'foto_categories' => ['name' => 'Категории фото'],
 		'settings' => ['name' => 'Настройки (о сайте)'],
-		'questions' => ['name' => 'Вопросы'],
 		'advantages' => ['name' => 'Преимущества'],
 		'socials' => ['name' => 'Соц.сети'],
-		//'payments' => ['name' => 'Оплата'],
-		//'delivery' => ['name' => 'Доставка'],
-		//'users' => ['name' => 'Пользователи'],
+		//'questions' => ['name' => 'Вопросы'],
+		//'information' => ['name' => 'Информация (меню)'],		
 	];
 	// свойство с таблицами в которых будет происходить поиск
 	private $searchProjectTables = [
@@ -167,7 +162,7 @@ class Settings
 	// св-во, в котором будет храниться информация о корневых таблицах
 	private $rootItems = [
 		'name' => 'Корневая',
-		'tables' => ['catalog']
+		'tables' => ['catalog', 'foto_categories']
 	];
 
 	// свойство для автоматизации связей многие ко многим

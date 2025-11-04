@@ -44,6 +44,7 @@ const END_SLASH = '/';
  * кол-во отображения товаров на странице
  */
 const QTY = 18;
+const QTY_foto = 10;
 /** 
  * кол-во ссылок постраничной навигации (левее и правее активной)
  */
@@ -74,6 +75,7 @@ const USER_CSS_JS = [
 		'assets/css/main.css',
 		'assets/css/swiper.css',
 		'assets/css/index.css',
+		'assets/css/work.css',
 		'assets/css/work2.css',
 		'assets/css/about.css',
 		'assets/css/socialblocks.css',

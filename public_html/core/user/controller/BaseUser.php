@@ -48,6 +48,8 @@ abstract class BaseUser extends \core\base\controller\BaseController
 	 */
 	protected $socials;
 
+	protected $fotos;
+
 	protected $phones;
 
 	protected $emails;
@@ -88,6 +90,11 @@ abstract class BaseUser extends \core\base\controller\BaseController
 
 		// получим в св-во: $this->menu, в ячейку: ['catalog'], то что хранится в соответствующей таблице БД
 		$this->menu['catalog'] = $this->model->get('catalog', [
+			'where' => ['visible' => 1, 'parent_id' => null],
+			'order' => ['menu_position']
+		]);
+
+		$this->menu['catalogFotos'] = $this->model->get('foto_categories', [
 			'where' => ['visible' => 1, 'parent_id' => null],
 			'order' => ['menu_position']
 		]);

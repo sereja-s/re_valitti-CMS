@@ -1,0 +1,307 @@
+<?php if (!empty($data)) :  ?>
+
+	<section class="page__hero-services hero-services">
+
+		<div class="hero-services__container">
+
+			<div class="page__header-work header-work">
+				<div data-fls-blockhead="" class="header-work__blockhead blockhead">
+					<h2 class="selected-work__title"><?= $data['name'] ?></h2>
+					<div class="blockhead__text">
+						<?= $data['description'] ?>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="page__body-work body-work">
+			<div class="body-work__container">
+
+				<?php if (!empty($fotos)) : ?>
+
+					<div class="body-work__works works">
+
+						<?php foreach ($fotos as $item) : ?>
+
+							<article data-fls-work="" class="item-work">
+								<div class="item-work__picture">
+									<picture>
+										<img class="item-work__image" alt="<?= $item['name'] ?>" src="<?= $this->img($item['img']) ?>">
+									</picture>
+								</div>
+								<div class="item-work__body">
+									<h5 class="item-work__name">
+										<div class="item-work__link-name"></div>
+									</h5>
+									<div class="item-work__category" href="NaN"><?= $item['name'] ?></div>
+								</div>
+							</article>
+
+						<?php endforeach; ?>
+						<!-- <article data-fls-work="" class="item-work">
+						<a href="#" class="item-work__picture">
+							<picture>
+
+								<img class="item-work__image" alt="Image" src="./assets/img/work/Стрижка без препаратов.jpg">
+							</picture>
+						</a>
+						<div class="item-work__body">
+							<h5 class="item-work__name">
+								<a href="#" class="item-work__link-name">Стрижка без препаратов</a>
+							</h5>
+							<a class="item-work__category" href="NaN">от 1000 руб.</a>
+						</div>
+					</article>
+					<article data-fls-work="" class="item-work">
+						<a href="#" class="item-work__picture">
+							<picture>
+
+								<img class="item-work__image" alt="Image" src="./assets/img/work/Укладка повседневная.jpg">
+							</picture>
+						</a>
+						<div class="item-work__body">
+							<h5 class="item-work__name">
+								<a href="#" class="item-work__link-name">Укладка повседневная</a>
+							</h5>
+							<a class="item-work__category" href="NaN">от 2300 руб.</a>
+						</div>
+					</article>
+					<article data-fls-work="" class="item-work">
+						<a href="#" class="item-work__picture">
+							<picture>
+
+								<img class="item-work__image" alt="Image" src="./assets/img/work/Оформление чёлки.jpg">
+							</picture>
+						</a>
+						<div class="item-work__body">
+							<h5 class="item-work__name">
+								<a href="#" class="item-work__link-name">Оформление чёлки</a>
+							</h5>
+							<a class="item-work__category" href="NaN">1000 руб.</a>
+						</div>
+					</article>
+					<article data-fls-work="" class="item-work">
+						<a href="#" class="item-work__picture">
+							<picture>
+
+								<img class="item-work__image" alt="Image" src="./assets/img/work/стрижка горячим ножницами-мин.jpg">
+							</picture>
+						</a>
+						<div class="item-work__body">
+							<h5 class="item-work__name">
+								<a href="#" class="item-work__link-name">Стрижка горячими ножницами</a>
+							</h5>
+							<a class="item-work__category" href="NaN">от 2500 руб.</a>
+						</div>
+					</article>
+					<article data-fls-work="" class="item-work">
+						<a href="#" class="item-work__picture">
+							<picture>
+
+								<img class="item-work__image" alt="Image" src="./assets/img/work/Выпрямление накрутка волос.jpg">
+							</picture>
+						</a>
+						<div class="item-work__body">
+							<h5 class="item-work__name">
+								<a href="#" class="item-work__link-name">Выпрямление/накрутка волос</a>
+							</h5>
+							<a class="item-work__category" href="NaN">1500/2000 руб.</a>
+						</div>
+					</article>
+					<article data-fls-work="" class="item-work">
+						<a href="#" class="item-work__picture">
+							<picture>
+
+								<img class="item-work__image" alt="Image" src="./assets/img/work/Сложная укладка причёска.jpg">
+							</picture>
+						</a>
+						<div class="item-work__body">
+							<h5 class="item-work__name">
+								<a href="#" class="item-work__link-name">Сложная укладка/причёска</a>
+							</h5>
+							<a class="item-work__category" href="NaN">от 2500 руб.</a>
+						</div>
+					</article>
+					<article data-fls-work="" class="item-work">
+						<a href="#" class="item-work__picture">
+							<picture>
+
+								<img class="item-work__image" alt="Image" src="./assets/img/work/Плетение кос простое сложное.jpg">
+							</picture>
+						</a>
+						<div class="item-work__body">
+							<h5 class="item-work__name">
+								<a href="#" class="item-work__link-name">Плетение кос простое/сложное</a>
+							</h5>
+							<a class="item-work__category" href="NaN">1000/2000 руб.</a>
+						</div>
+					</article> -->
+					</div>
+
+					<style>
+						.pagination {
+							-webkit-box-align: center;
+							-ms-flex-align: center;
+							align-items: center;
+							display: -webkit-box;
+							display: -ms-flexbox;
+							display: flex;
+							-webkit-box-pack: center;
+							-ms-flex-pack: center;
+							justify-content: center;
+						}
+
+						.pagination__wrapper {
+							position: relative;
+						}
+
+						.pagination__btn {
+							width: 40px;
+							height: 40px;
+							-webkit-box-align: center;
+							-ms-flex-align: center;
+							align-items: center;
+							display: -webkit-box;
+							display: -ms-flexbox;
+							display: flex;
+							-webkit-box-pack: center;
+							-ms-flex-pack: center;
+							justify-content: center;
+						}
+
+						.pagination__btn--prev {
+							-webkit-transform: rotate(180deg);
+							-ms-transform: rotate(180deg);
+							transform: rotate(180deg);
+						}
+
+						.pagination__icon {
+							width: 18px;
+							height: 18px;
+							fill: #ff6d00;
+						}
+
+						.pagination__list {
+							-webkit-box-align: center;
+							-ms-flex-align: center;
+							align-items: center;
+							display: -webkit-box;
+							display: -ms-flexbox;
+							display: flex;
+						}
+
+						.pagination__item {
+							border: 1px solid #dddddd;
+							border-right: 0;
+						}
+
+						.pagination__item:last-child {
+							border-right: 1px solid #dddddd;
+						}
+
+						.pagination__item--active .pagination__link {
+							background-color: #dddddd;
+						}
+
+						.pagination__link {
+							width: 40px;
+							height: 40px;
+							-webkit-box-align: center;
+							-ms-flex-align: center;
+							align-items: center;
+							display: -webkit-box;
+							display: -ms-flexbox;
+							display: flex;
+							-webkit-box-pack: center;
+							-ms-flex-pack: center;
+							justify-content: center;
+							color: #4b4b4b;
+							font-size: 14px;
+						}
+
+						.pagination__link:hover {
+							color: #ff6d00;
+							text-decoration: underline;
+						}
+
+						.pagination__count {
+							/* -webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 14px; */
+							/* position: absolute; */
+							/* position: relative;
+	justify-content: center;
+	margin-top: 20px; */
+							/* top: 0;
+	right: 0; */
+						}
+
+						/* @media screen and (max-width: 767px) {
+	.pagination__count {
+		position: relative;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		margin-top: 20px;
+	}
+} */
+
+						.pagination__count>* {
+							margin-right: 10px;
+						}
+
+						.pagination__count>*:last-child {
+							margin-right: 0;
+						}
+					</style>
+
+				<?php endif; ?>
+
+			</div>
+		</div>
+
+		<div style="text-align: center; padding-block: 1.5rem;">
+
+			<a href=" #" style="font-weight: 700; font-size: 1.1rem; padding-right: 0.7rem; padding-bottom: 0.7rem" data-fls-scrollto=".content-about" data-fls-scrollto-top="150" data-fls-button="" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d">Прайс-лист</a>
+			<a href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone']) ?>" style="font-weight: 700; font-size: 1.1rem" data-fls-scrollto=".content-about" data-fls-scrollto-top="150" data-fls-button="" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d"><?= $this->set['phone'] ?></a>
+
+		</div>
+
+		<?php if (!empty($pages)) : ?>
+
+			<div class="pagination" style="padding-top: 35px;">
+
+				<?php $this->pagination($pages) ?>
+
+				<!-- <a class="pagination__btn pagination__btn--prev" href="#">
+							<svg class="svg-sprite-icon icon-arrow pagination__icon">
+								<use xlink:href="<?= PATH . TEMPLATE ?>assets/img/svg/symbol/sprite.svg#arrow"></use>
+							</svg>
+						</a>
+						<ul class="pagination__list">
+							<li class="pagination__item pagination__item--active"><a class="pagination__link" href="#">1</a></li>
+							<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+							<li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+							<li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+							<li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+						</ul>
+						<a class="pagination__btn" href="#">
+							<svg class="svg-sprite-icon icon-arrow pagination__icon">
+								<use xlink:href="<?= PATH . TEMPLATE ?>assets/img/svg/symbol/sprite.svg#arrow"></use>
+							</svg>
+						</a> -->
+
+			</div>
+
+		<?php endif; ?>
+
+
+
+	</section>
+
+<?php endif; ?>
