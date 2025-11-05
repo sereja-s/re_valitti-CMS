@@ -34,109 +34,12 @@
 									<h5 class="item-work__name">
 										<div class="item-work__link-name"></div>
 									</h5>
-									<div class="item-work__category" href="NaN"><?= $item['name'] ?></div>
+									<div class="item-work__category"><?= $item['name'] ?></div>
 								</div>
 							</article>
 
 						<?php endforeach; ?>
-						<!-- <article data-fls-work="" class="item-work">
-						<a href="#" class="item-work__picture">
-							<picture>
 
-								<img class="item-work__image" alt="Image" src="./assets/img/work/Стрижка без препаратов.jpg">
-							</picture>
-						</a>
-						<div class="item-work__body">
-							<h5 class="item-work__name">
-								<a href="#" class="item-work__link-name">Стрижка без препаратов</a>
-							</h5>
-							<a class="item-work__category" href="NaN">от 1000 руб.</a>
-						</div>
-					</article>
-					<article data-fls-work="" class="item-work">
-						<a href="#" class="item-work__picture">
-							<picture>
-
-								<img class="item-work__image" alt="Image" src="./assets/img/work/Укладка повседневная.jpg">
-							</picture>
-						</a>
-						<div class="item-work__body">
-							<h5 class="item-work__name">
-								<a href="#" class="item-work__link-name">Укладка повседневная</a>
-							</h5>
-							<a class="item-work__category" href="NaN">от 2300 руб.</a>
-						</div>
-					</article>
-					<article data-fls-work="" class="item-work">
-						<a href="#" class="item-work__picture">
-							<picture>
-
-								<img class="item-work__image" alt="Image" src="./assets/img/work/Оформление чёлки.jpg">
-							</picture>
-						</a>
-						<div class="item-work__body">
-							<h5 class="item-work__name">
-								<a href="#" class="item-work__link-name">Оформление чёлки</a>
-							</h5>
-							<a class="item-work__category" href="NaN">1000 руб.</a>
-						</div>
-					</article>
-					<article data-fls-work="" class="item-work">
-						<a href="#" class="item-work__picture">
-							<picture>
-
-								<img class="item-work__image" alt="Image" src="./assets/img/work/стрижка горячим ножницами-мин.jpg">
-							</picture>
-						</a>
-						<div class="item-work__body">
-							<h5 class="item-work__name">
-								<a href="#" class="item-work__link-name">Стрижка горячими ножницами</a>
-							</h5>
-							<a class="item-work__category" href="NaN">от 2500 руб.</a>
-						</div>
-					</article>
-					<article data-fls-work="" class="item-work">
-						<a href="#" class="item-work__picture">
-							<picture>
-
-								<img class="item-work__image" alt="Image" src="./assets/img/work/Выпрямление накрутка волос.jpg">
-							</picture>
-						</a>
-						<div class="item-work__body">
-							<h5 class="item-work__name">
-								<a href="#" class="item-work__link-name">Выпрямление/накрутка волос</a>
-							</h5>
-							<a class="item-work__category" href="NaN">1500/2000 руб.</a>
-						</div>
-					</article>
-					<article data-fls-work="" class="item-work">
-						<a href="#" class="item-work__picture">
-							<picture>
-
-								<img class="item-work__image" alt="Image" src="./assets/img/work/Сложная укладка причёска.jpg">
-							</picture>
-						</a>
-						<div class="item-work__body">
-							<h5 class="item-work__name">
-								<a href="#" class="item-work__link-name">Сложная укладка/причёска</a>
-							</h5>
-							<a class="item-work__category" href="NaN">от 2500 руб.</a>
-						</div>
-					</article>
-					<article data-fls-work="" class="item-work">
-						<a href="#" class="item-work__picture">
-							<picture>
-
-								<img class="item-work__image" alt="Image" src="./assets/img/work/Плетение кос простое сложное.jpg">
-							</picture>
-						</a>
-						<div class="item-work__body">
-							<h5 class="item-work__name">
-								<a href="#" class="item-work__link-name">Плетение кос простое/сложное</a>
-							</h5>
-							<a class="item-work__category" href="NaN">1000/2000 руб.</a>
-						</div>
-					</article> -->
 					</div>
 
 					<style>
@@ -225,32 +128,6 @@
 							text-decoration: underline;
 						}
 
-						.pagination__count {
-							/* -webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	font-size: 14px; */
-							/* position: absolute; */
-							/* position: relative;
-	justify-content: center;
-	margin-top: 20px; */
-							/* top: 0;
-	right: 0; */
-						}
-
-						/* @media screen and (max-width: 767px) {
-	.pagination__count {
-		position: relative;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-		margin-top: 20px;
-	}
-} */
-
 						.pagination__count>* {
 							margin-right: 10px;
 						}
@@ -265,7 +142,7 @@
 			</div>
 		</div>
 
-		<div style="text-align: center; padding-block: 1.5rem;">
+		<div style="text-align: center; padding-block: 1.7rem;">
 
 			<a href=" #" style="font-weight: 700; font-size: 1.1rem; padding-right: 0.7rem; padding-bottom: 0.7rem" data-fls-scrollto=".content-about" data-fls-scrollto-top="150" data-fls-button="" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d">Прайс-лист</a>
 			<a href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone']) ?>" style="font-weight: 700; font-size: 1.1rem" data-fls-scrollto=".content-about" data-fls-scrollto-top="150" data-fls-button="" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d"><?= $this->set['phone'] ?></a>

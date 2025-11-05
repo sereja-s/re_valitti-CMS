@@ -46,24 +46,26 @@
 						<li class="body-footer__item">
 							<a href="#" class="body-footer__link">Услуги бровиста</a>
 						</li>
+
+					</ul>
+				</div>
+				<div class="body-footer__menu">
+					<h5 class="body-footer__title">Контакты</h5>
+					<ul class="body-footer__list">
+						<li class="body-footer__item">
+							<a href="#" class="body-footer__link">+7(949) 757-87-27</a>
+						</li>
 						<li class="body-footer__item" style="padding: 1rem 0;">
 							<a href="#" data-fls-button="" class="body-footer__button button button--icon button--lite button--icon-arrow button--arrow-ru">Связаться через Телеграм</a>
 						</li>
 					</ul>
 				</div>
 				<div class="body-footer__menu">
-					<h5 class="body-footer__title">КОНТАКТЫ</h5>
+					<h5 class="body-footer__title">Адрес</h5>
 					<ul class="body-footer__list">
 						<li class="body-footer__item">
-							<a href="#" class="body-footer__link">+7(949) 757-87-27</a>
+							<p class="body-footer__link">г. Донецк, пр. Илича, 21 А</p>
 						</li>
-						<li class="body-footer__item">
-							<a href="#" class="body-footer__link">+7(949) 757-87-27</a>
-						</li>
-						<li class="body-footer__item">
-							<a href="#" class="body-footer__link">г. Донецк, пр. Илича, 21 А</a>
-						</li>
-
 					</ul>
 				</div>
 				<div class="body-footer__menu">
@@ -75,12 +77,13 @@
 					</ul>
 				</div>
 				<div class="body-footer__menu">
-					<h5 class="body-footer__title">РЕКВИЗИТЫ</h5>
+					<h5 class="body-footer__title">Информация</h5>
 					<ul class="body-footer__list">
 						<li class="body-footer__item">
 							<p class="body-footer__link"> ОГРН 1229300036790<br>ИНН 9303005685<br>КПП 930301001</p>
 						</li>
 					</ul>
+
 				</div>
 
 			</div>
@@ -88,12 +91,20 @@
 		<div class="footer__bottom bottom-footer">
 			<div class="bottom-footer__copy">Данный сайт носит исключительно информационный характер и ни при каких обстоятельствах не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ.</div>
 			<div class="bottom-footer__copy">© 2025</div>
-			<a href="#" data-fls-scrollto="main" data-fls-button="" class="bottom-footer__button button button--text button--text-big button--text-rev button--icon-arrow"></a>
+			<!-- <a href="#" data-fls-scrollto="main" data-fls-button="" class="bottom-footer__button button button--text button--text-big button--text-rev button--icon-arrow"></a> -->
 			<a href="#" class="bottom-footer__button button button--text button--text-big button--text-rev"> Сделано в САЙТ ПОСТРОЕН</a>
 		</div>
 	</div>
 </footer>
 </div>
+
+<script>
+	var ForJS = {};
+	/* укажем для описания полного пути к маркеру(картинки-лого) на карте */
+	/* Остальное описано в main.js  */
+
+	ForJS.imgMap = '<?= $this->img($this->set['map_img']) ?>';
+</script>
 
 <?php $this->getScripts() ?>
 

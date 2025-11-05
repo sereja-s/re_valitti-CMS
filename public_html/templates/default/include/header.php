@@ -45,7 +45,7 @@
 								<?php endif; ?>
 
 								<li class="menu__item">
-									<a href="work.html" class="menu__link">О нас</a>
+									<a href="<?= $this->alias('about') ?>" class="menu__link">О нас</a>
 								</li>
 
 								<?php if (!empty($this->menu['catalogFotos'])) : ?>

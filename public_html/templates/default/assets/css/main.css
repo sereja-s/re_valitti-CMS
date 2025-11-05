@@ -885,7 +885,7 @@ body {
     column-gap: clamp( 1.25rem , -2.78017241379375rem  +  7.5862068966vw , 4rem );
   }
   .body-footer__menus {
-    column-gap: clamp( 1.25rem , -2.78017241379375rem  +  7.5862068966vw , 4rem );
+    column-gap: clamp( 0.25rem , -2.78017241379375rem  +  7.5862068966vw , 1rem );
   }
 }@media (min-width: 89.375em) {
   .footer {

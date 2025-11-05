@@ -2,7 +2,6 @@
 		<div class="about__container">
 			<figure data-fls-dynamic=".about__header, 768, 1" class="about__picture">
 				<picture>
-
 					<img class="about__image" alt="Image" src="<?= PATH . TEMPLATE ?>/assets/img/about/о_нас-мин.jpg">
 				</picture>
 			</figure>
@@ -46,11 +45,7 @@
 							</p>
 						</div>
 					</section>
-					<!-- <figure class="content-about__picture">
-						<picture>
-							<img style="max-width: 3rem;" alt="re_valitti" class="content-about__image" src="<?= PATH . TEMPLATE ?>assets/img/about/директор-мин.jpg">
-						</picture>
-					</figure> -->
+
 					<div class="item-review__author author-review">
 						<picture>
 							<img alt="Директор" class="author-review__avatar" src="<?= PATH . TEMPLATE ?>assets/img/about/Юлия Панченко-мин.jpg">
@@ -81,50 +76,43 @@
 							<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__link--icon-s-pint">Pinterest</a>
 						</li>
 					</ul>
-					<!-- <section style="border-radius: 0.8rem;" data-fls-border="" class="about__awards awards-about">
-						<h3 class="awards-about__title">Подписчикам нашего телеграм-канала скидка 3%</h3>
-						<table class="awards-about__table">
-							<tr class="awards-about__line">
-								<td class="awards-about__label">Стрижка волос (стрижка + укладка)</td>
-								<td class="awards-about__value">от <span style="color:red; font-size: 1.5rem;">2500</span> руб.</td>
-								<td><a href="#" data-fls-scrollto=".content-about" data-fls-scrollto-top="150" data-fls-button="" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d"></a></td>
-							</tr>
-							<tr class="awards-about__line">
-								<td class="awards-about__label">Стрижка волос (стрижка+ укладка)</td>
-								<td class="awards-about__value">от <span style="color:red; font-size: 1.5rem;">2500</span> руб.</td>
-								<td><a href="#" data-fls-scrollto=".content-about" data-fls-scrollto-top="150" data-fls-button="" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d"></a></td>
-							</tr>
-							<tr class="awards-about__line">
-								<td class="awards-about__label">Стрижка волос (стрижка+ укладка)</td>
-								<td class="awards-about__value">от <span style="color:red; font-size: 1.5rem;">2500</span> руб.</td>
-								<td><a href="#" data-fls-scrollto=".content-about" data-fls-scrollto-top="150" data-fls-button="" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d"></a></td>
-							</tr>
-							<tr class="awards-about__line">
-								<td class="awards-about__label">Стрижка без препаратов (окрашивание/уход)</td>
-								<td class="awards-about__value">от <span style="color:red; font-size: 1.5rem;">2500</span></td>
-								<td><a href="#" data-fls-scrollto=".content-about" data-fls-scrollto-top="150" data-fls-button="" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d"></a></td>
-							</tr>
-							<tr class="awards-about__line">
-								<td class="awards-about__label">Укладка повседневная (сталинг включен)</td>
-								<td class="awards-about__value">от <span style="color:red; font-size: 1.5rem;">2500</span></td>
-								<td><a href="#" data-fls-scrollto=".content-about" data-fls-scrollto-top="150" data-fls-button="" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d"></a></td>
-							</tr>
-							<tr class="awards-about__line">
-								<td class="awards-about__label">Выпрямление волос щипцами/накрутка на щипцы (без мытья головы)</td>
-								<td class="awards-about__value">от <span style="color:red; font-size: 1.3rem;">15000 / 2000</span> руб.</td>
-								<td><a href="#" data-fls-scrollto=".content-about" data-fls-scrollto-top="150" data-fls-button="" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d"></a></td>
-							</tr>
-							<tr class="awards-about__line">
-								<td class="awards-about__label">Стрижка без препаратов (окрашивание/уход)</td>
-								<td class="awards-about__value">от <span style="color:red; font-size: 1.5rem;">2500</span></td>
-								<td><a href="#" data-fls-scrollto=".content-about" data-fls-scrollto-top="150" data-fls-button="" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d"></a></td>
-							</tr>
-
-
-
-						</table>
-					</section> -->
 				</div>
 			</div>
 		</div>
 	</article>
+	<!-- section-contacts -->
+	<section class="section-contacts">
+		<div class="container section-contacts__container">
+
+			<div class="contacts">
+				<div class="contacts__start map-wrapper">
+
+					<div class="contacts__map" id="ymap" data-coordinates="48.000795, 37.827293"
+						data-address="пр. Ильмча"></div>
+					<p class="page-title sectoin-contacts__title">Для взамодействия с картой, кликните по ней<br>Чтобы карту отключить, кликните в другом месте экрана</p>
+				</div>
+				<style>
+					.map-wrapper:not(.is-active) * {
+						pointer-events: none;
+					}
+				</style>
+				<div class="contacts__end">
+					<div class="contacts__item">
+						<h3 class="content-about__title" style="padding-bottom: 0.7rem;">Адрес</h3>
+						<p class="content-about__text"><?= $this->set['address'] ?></p>
+					</div>
+					<div class="contacts__item">
+						<h3 class="content-about__title" style="padding-bottom: 0.7rem;">График работы</h3>
+						<p class=content-about__text>Понедельник, среда, пятница, суббота<br> c 9:00 до 19:00</p>
+					</div>
+					<div class="contacts__item">
+						<h3 class="content-about__title" style="padding-bottom: 0.7rem;">Телефон</h3>
+						<p class="content-about__text">
+							<a class="contacts__phone" href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone']) ?>"><?= $this->set['phone'] ?></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.section-contacts -->
