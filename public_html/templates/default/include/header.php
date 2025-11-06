@@ -18,8 +18,7 @@
 		<header data-fls-header="" class="header">
 			<div class="header__container">
 				<div class="header__body">
-					<!-- <img style="max-width: 5rem;" src="<?= PATH . TEMPLATE ?>/assets/img/top-section/Бел-мин (6).svg" alt="Image" class="header__logo"> -->
-					<a href="/" class="header__logo" style="color:rgb(150, 43, 5); font-size: 1.375rem; font-weight: 500;">РеВалитти</a>
+					<a href="/" class="header__logo" style="color:rgb(150, 43, 5); font-size: 1.375rem; font-weight: 500;"><?= $this->set['name'] ?></a>
 					<div class="header__menu menu">
 						<nav class="menu__body">
 							<ul class="menu__list">

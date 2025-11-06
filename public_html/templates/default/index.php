@@ -1,105 +1,54 @@
-<section class="page__hero hero">
-	<div class="hero__container">
-		<div style="min-width: 0;" class="my-swiper">
-			<!-- Slider main container -->
-			<div class="swiper">
-				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
-					<!-- Slides -->
-					<div class="swiper-slide">
-						<div class="hero__picture">
-							<picture><img class="hero__image" alt="Hero Image" src="<?= PATH . TEMPLATE ?>/assets/img/top-section/Бел-мин (2).svg"></picture>
-						</div>
-						<div class="hero__blockhead blockhead">
-							<h2 class="blockhead__title blockhead__title--size-160">
-								Салон красоты в Донецке
-							</h2>
-							<div class="blockhead__text blockhead__text--size-24">
-								<p>
-									Красота начинается здесь.<br>В Re Valitti мы подчёркиваем индивидуальность, чтобы с первой минуты вы чувствовали себя желанными и особенными. Доверьте свою красоту профессионалам!
-								</p>
+<?php if (!empty($sales)) : ?>
+	<section class="page__hero hero">
+		<div class="hero__container">
+			<div style="min-width: 0;" class="my-swiper">
+				<!-- Slider main container -->
+				<div class="swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<?php foreach ($sales as $item) : ?>
+							<div class="swiper-slide">
+								<div class="hero__picture">
+									<picture><img class="hero__image" alt="<?= $item['name'] ?>" src="<?= $this->img($item['img']) ?>"></picture>
+								</div>
+								<div class="hero__blockhead blockhead">
+									<h2 class="blockhead__title blockhead__title--size-160">
+										<?= $item['name'] ?>
+									</h2>
+									<div class="blockhead__text blockhead__text--size-24">
+										<?= $item['short_content'] ?>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="hero__picture">
-							<picture><img class="hero__image" alt="Hero Image" src="<?= PATH . TEMPLATE ?>/assets/img/top-section/Бел-мин (3).svg"></picture>
-						</div>
-						<div class="hero__blockhead blockhead">
-							<h2 class="blockhead__title blockhead__title--size-160">
-								Центр красоты
-							</h2>
-							<div class="blockhead__text blockhead__text--size-24">
-								<p>
-									Красота начинается здесь.<br>В Re Valitti мы подчёркиваем индивидуальность, чтобы с первой минуты вы чувствовали себя желанными и особенными. Доверьте свою красоту профессионалам!
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="hero__picture">
-							<picture><img class="hero__image" alt="Hero Image" src="<?= PATH . TEMPLATE ?>/assets/img/top-section/корчневый-мин (4).svg"></picture>
-						</div>
-						<div class="hero__blockhead blockhead">
-							<h2 class="blockhead__title blockhead__title--size-160">
-								Центр красоты 2
-							</h2>
-							<div class="blockhead__text blockhead__text--size-24">
-								<p>
-									Красота начинается здесь.<br>В Re Valitti мы подчёркиваем индивидуальность, чтобы с первой минуты вы чувствовали себя желанными и особенными. Доверьте свою красоту профессионалам!
-								</p>
-							</div>
-						</div>
+						<?php endforeach; ?>
 					</div>
 				</div>
-
 			</div>
-
 		</div>
-	</div>
-</section>
+	</section>
+<?php endif; ?>
 
-<div class="page__clients clients">
-	<ul class="clients__container">
-		<li class="clients__item">
-			<img src="<?= PATH . TEMPLATE ?>/assets/img/clients/tokio inkarami-мин.jpg" alt="Image">
-		</li>
-		<li class="clients__item">
-			<img src="<?= PATH . TEMPLATE ?>/assets/img/clients/olaplex-мин.jpg" alt="Image">
-		</li>
-		<li class="clients__item">
-			<img src="<?= PATH . TEMPLATE ?>/assets/img/clients/luxio-мин.jpg" alt="Image">
-		</li>
-		<li class="clients__item">
-			<img src="<?= PATH . TEMPLATE ?>/assets/img/clients/peach peel-мин.jpg" alt="Image">
-		</li>
-		<li class="clients__item">
-			<img src="<?= PATH . TEMPLATE ?>/assets/img/clients/kydra-мин.jpg" alt="Image">
-		</li>
-		<li class="clients__item">
-			<img src="<?= PATH . TEMPLATE ?>/assets/img/clients/hidropeptide-мин.jpg" alt="Image">
-		</li>
-		<li class="clients__item">
-			<img src="<?= PATH . TEMPLATE ?>/assets/img/clients/cdn-мин.jpg" alt="Image">
-		</li>
-		<li class="clients__item">
-			<img src="<?= PATH . TEMPLATE ?>/assets/img/clients/янеа-мин.jpg" alt="Image">
-		</li>
-		<li class="clients__item">
-			<img src="<?= PATH . TEMPLATE ?>/assets/img/clients/suda-мин.jpg" alt="Image">
-		</li>
-		<li class="clients__item">
-			<img src="<?= PATH . TEMPLATE ?>/assets/img/clients/loreal-мин.jpg" alt="Image">
-		</li>
-	</ul>
-</div>
+<?php if (!empty($advantages)) : ?>
+
+	<div class="page__clients clients">
+		<ul class="clients__container">
+			<?php foreach ($advantages as $item) : ?>
+				<li class="clients__item">
+					<img src="<?= $this->img($item['img']) ?>" alt="<?= $item['name'] ?>">
+				</li>
+			<?php endforeach; ?>
+		</ul>
+	</div>
+
+<?php endif; ?>
 
 <section class="page__selected-work selected-work">
 	<div class="selected-work__container">
 		<div class="selected-work__header">
 			<h3 class="selected-work__title">
 				Услуги салона красоты
-				<span>Ре Валитти</span>
+				<span><?= $this->set['name'] ?></span>
 			</h3>
 			<!-- <a href="#" data-fls-button="" class="selected-work__button button button--text button--icon-arrow button--arrow-ru">See All</a> -->
 		</div>
@@ -129,21 +78,13 @@
 
 	<div class="selected-work__container">
 		<div data-fls-blockhead="" class="process__blockhead blockhead">
-			<span class="blockhead__label">Доверьте свою красоту профессионалам</span>
+			<span class="blockhead__label"><?= $this->set['short_content'] ?></span>
 			<h1 class="blockhead__title">
-				Салон красоты в Донецке
-				<span>Ре Валитти</span>
+				Центр красоты в Донецке
+				<span><?= $this->set['name'] ?></span>
 			</h1>
 			<div class="blockhead__text">
-				<p>
-					Мы обновили наш прайс-лист, чтобы вам было удобно и легко планировать свой визит в центр красоты ReValitti🐾
-
-					Здесь вы найдете цены на основные услуги.
-
-					Мы всегда используем только профессиональные материалы (Luxio, CND, Kydra, L’Oréal) и конечно стерильный инструмент.
-
-					Ваша красота и здоровье — наш приоритет
-				</p>
+				<?= $this->set['description'] ?>
 			</div>
 			<a href="#" data-fls-button="" class="blockhead__button button button--icon button--lite button--icon-arrow button--arrow-ru">Прайс-лист</a>
 		</div>

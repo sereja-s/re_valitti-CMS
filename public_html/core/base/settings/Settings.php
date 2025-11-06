@@ -86,7 +86,7 @@ class Settings
 		'fotos' => ['name' => 'Фото'],
 		'foto_categories' => ['name' => 'Категории фото'],
 		'settings' => ['name' => 'Настройки (о сайте)'],
-		'advantages' => ['name' => 'Преимущества'],
+		'advantages' => ['name' => 'Бренды'],
 		'socials' => ['name' => 'Соц.сети'],
 		//'questions' => ['name' => 'Вопросы'],
 		//'information' => ['name' => 'Информация (меню)'],		

@@ -9,7 +9,7 @@
 					<span><a href="#">Ре Валитти</a></span>
 				</h3> -->
 
-				<img src="<?= PATH . TEMPLATE ?>/assets/img/top-section/корчневый-мин (4).svg" alt="Logo" class="content-footer__logo">
+				<img src="<?= $this->img($this->set['img']) ?>" alt="<?= $this->set['name'] ?>" class="content-footer__logo">
 
 
 				<ul data-fls-social="" class="content-footer__social social social--text">

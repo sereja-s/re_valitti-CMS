@@ -89,7 +89,7 @@
 
 					<div class="contacts__map" id="ymap" data-coordinates="48.000795, 37.827293"
 						data-address="пр. Ильмча"></div>
-					<p class="page-title sectoin-contacts__title">Для взамодействия с картой, кликните по ней<br>Чтобы карту отключить, кликните в другом месте экрана</p>
+					<p class="page-title sectoin-contacts__title">Для взамодействия с картой, кликните по ней<br>Снова сделать карту неподвижной - кликните в другом месте экрана</p>
 				</div>
 				<style>
 					.map-wrapper:not(.is-active) * {

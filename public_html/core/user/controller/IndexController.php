@@ -24,39 +24,36 @@ class IndexController extends BaseUser
 		$advantages = $this->model->get('advantages', [
 			'where' => ['visible' => 1],
 			'order' => ['menu_position'],
-			'limit' => 6
 		]);
 
 		// Выпуск №128 | Вывод новостей
-		$news = $this->model->get('news', [
+		/* $news = $this->model->get('news', [
 			'where' => ['visible' => 1],
 			'order' => ['date'],
 			'order_direction' => ['DESC'],
 			'limit' => 3
-		]);
+		]); */
 
 		// Выпуск №126
 		// массив предложений (главная страница) +Выпуск №127
-		$arrHits = [
-
+		/* $arrHits = [
 			'hit' => [
 				'name' => 'Хит продаж',
 				'icon' => ''
 			],
-			/* 'hot' => [
+			'hot' => [
 				'name' => 'Горячие предложения',
 				'icon' => '<svg><use xlink:href="' . PATH . TEMPLATE . 'assets/img/icons.svg#hot"</use></svg>'
-			], */
-			/* 'sale' => [
+			],
+			'sale' => [
 				'name' => 'Распродажа',
 				'icon' => ''
-			], */
+			],
 			'new' => [
 				'name' => 'Наши новинки',
 				'icon' => ''
 			],
-
-		];
+		]; */
 
 		/* $goods = [];
 
@@ -70,10 +67,10 @@ class IndexController extends BaseUser
 			]);
 		} */
 
-		$questions = $this->model->get('questions', [
+		/* $questions = $this->model->get('questions', [
 			'where' => ['visible' => 1],
 			'order' => ['menu_position']
-		]);
+		]); */
 
 
 		// Выпуск №125
