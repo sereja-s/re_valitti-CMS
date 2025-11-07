@@ -23,26 +23,6 @@
 					<a href="#" style="font-weight: 700; font-size: 1.1rem" data-fls-scrollto=".content-about" data-fls-scrollto-top="150" data-fls-button="" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d">+7(949)757-87-27</a>
 				</div>
 
-				<ul data-fls-socialblocks="" class="about__social social-blocks">
-					<li class="social-blocks__item">
-						<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__link--icon-s-inst">Instagram</a>
-					</li>
-					<li class="social-blocks__item">
-						<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__link--icon-s-twit">Twitter</a>
-					</li>
-					<li class="social-blocks__item">
-						<a data-fls-border="" href="#" target="_blank" class="social-blocks__link social-blocks__link--icon-s-fb">Facebook</a>
-					</li>
-					<li class="social-blocks__item">
-						<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__link--icon-s-beh">Behance</a>
-					</li>
-					<li class="social-blocks__item">
-						<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__link--icon-s-drb">Dribble</a>
-					</li>
-					<li class="social-blocks__item">
-						<a href="#" target="_blank" data-fls-border="" class="social-blocks__link social-blocks__link--icon-s-pint">Pinterest</a>
-					</li>
-				</ul>
 			</div>
 		</div>
 		</div>

@@ -100,8 +100,8 @@ class Settings
 	// свойство: массив шаблонов
 	private $templateArr = [
 		// массив вида: 'название шаблона' => массив с полями для которых должен быть подключен соответствующий шаблон
-		'text' => ['name', 'phone', 'email', 'alias', 'external_alias', 'sub_title', 'number_of_years', 'discount', 'price', 'price_m_opt', 'login', 'password'],
-		'textarea' => ['content', 'keywords', 'address', 'description', 'short_content'],
+		'text' => ['name', 'phone', 'email', 'address', 'alias', 'external_alias', 'telegram_alias', 'sub_title', 'number_of_years', 'discount', 'price', 'price_m_opt', 'login', 'password'],
+		'textarea' => ['content', 'work_time', 'keywords', 'description', 'short_content'],
 		'radio' => ['visible', 'show_top_menu', 'ot', 'new'],
 		'checkboxlist' => ['filters', 'filters_test'], // указали, что хотим подключить фильтры к связанной таблице: 
 		// товары (они прописаны в массиве: в свойстве: private $manyToMany)
@@ -125,6 +125,7 @@ class Settings
 		'address' => ['Адрес'],
 		'alias' => ['Ссылка ЧПУ'],
 		'external_alias' => ['Внешняя ссылка'],
+		'telegram_alias' => ['Ссылка на телеграм'],
 		'img' => ['Изображение', '(Одно)'],
 		'main_img' => ['Картинка', '(для ссылки на сайт)'],
 		'gallery_img' => ['галерея изображений', '(Несколько)'],
@@ -145,7 +146,8 @@ class Settings
 		'parent_id' => ['Выбрать категорию', '(К чему относится?)'],
 		'promo_img' => ['Изображение для главной страницы'],
 		'login' => ['Логин'],
-		'password' => ['Пароль']
+		'password' => ['Пароль'],
+		'work_time' => ['График работы'],
 		//'filters' => ['Категории фильтров']
 	];
 
