@@ -5,9 +5,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<meta name="description" content="<?= $data['name'] ? $data['name'] . ' в Донецке ДНР. Услуги премиум-класса, сертифицированные специалисты, современное оборудование и профессиональным материалы, ' . $this->set['phone'] . ($page ? ' - текущая страница № ' . $page : '') : $this->set['meta_description'] . ', ' . $this->set['phone'] ?>">
+	<meta name="keywords" content="<?= $data['name'] ? $data['name'] . ', ' : '' ?><?= $this->set['meta_keywords'] ?>">
 
-	<title>Cалон красоты в Донецке Ре Валитти</title>
+	<meta property="og:title" content="<?= $this->set['meta_title'] ?><?= $data['name'] ? ' | ' . $data['name'] : '' ?>" />
+	<meta property="og:description" content="<?= $this->set['meta_og_desc'] . ', ' . $this->set['phone'] ?>" />
+	<meta property="og:image" content="<?= $this->img($this->set['img']) ?>" />
 
+	<link rel="icon" href="https://revalitti.ru/favicon.ico" type="image/x-icon">
+
+	<title><?= $data['name'] ? $this->set['name'] . ' | ' . $data['name'] . ' в Донецке ДНР ' . ($page ? ' - страница ' . $page : '') : $this->set['meta_title'] ?></title>
 
 	<?php $this->getStyles() ?>
 </head>

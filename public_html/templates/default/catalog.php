@@ -22,8 +22,9 @@
 
 						</div>
 					</div>
-					<a href="#" style="font-weight: 700; font-size: 1.1rem; padding-right: 0.7rem" data-fls-scrollto=".content-about" data-fls-scrollto-top="150" data-fls-button="" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d">Прайс-лист</a>
-					<a href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone']) ?>" style="font-weight: 700; font-size: 1.1rem" data-fls-scrollto=".content-about" data-fls-scrollto-top="150" data-fls-button="" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d"><?= $this->set['phone'] ?></a>
+
+					<?= $this->telegramTelefon ?>
+
 				</div>
 				<?php if (empty($goods)) : ?>
 

@@ -30,18 +30,6 @@ class ProductController extends BaseUser
 
 		$data = array_shift($data);
 
-		// Выпуск №138 (пункт меню и таб в карточке товара: доставка и оплата)
-		$deliveryInfo = $this->model->get('information', [
-			'where' => ['visible' => 1, 'name' => 'доставка', ' name' => 'оплата'],
-			'operand' => ['=', '%LIKE%'],
-			'condition' => ['AND', 'OR'],
-			'limit' => 1
-		]);
-
-		//$a = 1;
-
-		$deliveryInfo && $deliveryInfo = $deliveryInfo[0];
-
-		return compact('data', 'deliveryInfo');
+		return compact('data');
 	}
 }

@@ -37,6 +37,7 @@ abstract class BaseUser extends \core\base\controller\BaseController
 	 * Выпуск №129 (св-во для хлебных крошек)
 	 */
 	protected $breadcrumbs;
+	protected $telegramTelefon;
 
 	/** 
 	 * св-во в котором будем держать данные пользователя (Выпуск №145)
@@ -139,6 +140,7 @@ abstract class BaseUser extends \core\base\controller\BaseController
 
 		// +Выпуск №129 (добавили в шаблон путь к файлу с хлебными крошками)
 		$this->breadcrumbs = $this->render(TEMPLATE . 'include/breadcrumbs');
+		$this->telegramTelefon = $this->render(TEMPLATE . 'include/telegramTelefon');
 
 		if (!$this->content) {
 

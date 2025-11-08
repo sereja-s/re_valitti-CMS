@@ -16,8 +16,9 @@
 							<?= $data['description'] ?>
 						</div>
 					</div>
-					<a href="#" style="font-weight: 700; font-size: 1.1rem" data-fls-scrollto=".content-about" data-fls-scrollto-top="150" data-fls-button="" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d">Прайс-лист</a>
-					<a href="#" style="font-weight: 700; font-size: 1.1rem" data-fls-scrollto=".content-about" data-fls-scrollto-top="150" data-fls-button="" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d">+7(949)757-87-27</a>
+
+					<?= $this->telegramTelefon ?>
+
 				</div>
 				<?php if (!empty($data['content'])) : ?>
 					<div class="about__main">

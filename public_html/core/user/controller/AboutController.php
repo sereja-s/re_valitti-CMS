@@ -22,6 +22,10 @@ class AboutController extends BaseUser
 		// укажежем, что если что то пришло в свойство: $about, то сохраним в нём только нулевой элемент массива, который пришёл (первый по очереди)
 		$about && $about = $about[0];
 
-		return compact('about');
+		$data = [];
+
+		$data['name'] = $about['title'];
+
+		return compact('about', 'data');
 	}
 }

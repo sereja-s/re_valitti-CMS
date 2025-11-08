@@ -91,7 +91,7 @@ class CatalogController extends BaseUser
 
 
 
-		return compact('data', 'goods'/* , 'catalogFilters', 'catalogPrices',  'order', 'quantities', 'pages' */);
+		return compact('data', 'goods');
 	}
 
 
