@@ -17,7 +17,7 @@ class IndexController extends BaseUser
 		// Выпуск №124- Пользовательская часть | вывод акций (слайдер под верхним меню)
 		$sales = $this->model->get('sales', [
 			'where' => ['visible' => 1],
-			'order' => ['menu_position']
+			'order' => ['menu_position'],
 		]);
 
 		// Выпуск №128 - массив преимуществ
@@ -27,12 +27,10 @@ class IndexController extends BaseUser
 		]);
 
 		// Выпуск №128 | Вывод новостей
-		/* $news = $this->model->get('news', [
+		$news = $this->model->get('news', [
 			'where' => ['visible' => 1],
-			'order' => ['date'],
-			'order_direction' => ['DESC'],
-			'limit' => 3
-		]); */
+			'order' => ['menu_position'],
+		]);
 
 		// Выпуск №126
 		// массив предложений (главная страница) +Выпуск №127
@@ -77,6 +75,6 @@ class IndexController extends BaseUser
 		//$goods = $this->model->getGoods();
 
 		// собираем переменные в массив и возвращаем в шаблон, что бы они стали доступными при выводе
-		return compact('sales', 'arrHits', 'goods', 'advantages', 'news', 'questions');
+		return compact('sales', 'advantages', 'news');
 	}
 }

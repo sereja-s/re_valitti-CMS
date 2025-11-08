@@ -101,7 +101,7 @@ abstract class BaseUser extends \core\base\controller\BaseController
 
 		// получим в св-во: $this->menu, в ячейку: ['information'], то что хранится в соответствующей таблице БД
 		$this->menu['information'] = $this->model->get('information', [
-			'where' => ['visible' => 1, 'show_top_menu' => 1],
+			'where' => ['visible' => 1],
 			'order' => ['menu_position']
 		]);
 		/* $this->menu['information-bottom'] = $this->model->get('information', [

@@ -47,10 +47,9 @@
 	<div class="selected-work__container">
 		<div class="selected-work__header">
 			<h3 class="selected-work__title">
-				Услуги салона красоты
+				Услуги центра красоты
 				<span><?= $this->set['name'] ?></span>
 			</h3>
-			<!-- <a href="#" data-fls-button="" class="selected-work__button button button--text button--icon-arrow button--arrow-ru">See All</a> -->
 		</div>
 		<?php if (!empty($this->menu['catalog'])) : ?>
 			<div class="selected-work__items works">
@@ -86,42 +85,29 @@
 			<div class="blockhead__text">
 				<?= $this->set['description'] ?>
 			</div>
-			<a href="#" data-fls-button="" class="blockhead__button button button--icon button--lite button--icon-arrow button--arrow-ru">Прайс-лист</a>
+			<a href="<?= $this->set['telegram_alias_price'] ?>" data-fls-button="" class="blockhead__button button button--icon button--lite button--icon-arrow button--arrow-ru">Прайс-лист</a>
 		</div>
 
-		<h3 class="selected-work__title selected-work__header">Мы в социальных сетях</h3>
+		<?php if (!empty($news)) : ?>
 
-		<div style="margin-top: 1.3rem;" class="page__skills skills">
-			<div class="skills__container">
-				<article data-fls-skill="" class="skill">
-					<h4 class="skill__title">
-						<a href="#" class="skill__link-title">Добро пожаловать в Re Valitti </a>
-					</h4>
-					<p class="skill__text">
-						Мы создаём не просто образы — мы подчеркиваем индивидуальность, работаем с текстурой, чувствуем характер.
-					</p>
-					<a href="#" data-fls-button="" class="button button--text button--icon-arrow button--arrow-ru">Подробнее</a>
-				</article>
-				<article data-fls-skill="" class="skill">
-					<h4 class="skill__title">
-						<a href="#" class="skill__link-title">Первое впечатление — самое важное</a>
-					</h4>
-					<div class="skill__text">
-						<p>В Re Valitti мы делаем так, чтобы с первой минуты вы чувствовали себя желанными и особенными. </p>
-						<p>Доверьте свою красоту профессионалам! </p>
-					</div>
-					<a href="#" data-fls-button="" class="button button--text button--icon-arrow button--arrow-ru">Подробнее в Telegram</a>
-				</article>
-				<article data-fls-skill="" class="skill">
-					<h4 class="skill__title">
-						<a href="#" class="skill__link-title">Маникюр в Re Valitti</a>
-					</h4>
-					<p class="skill__text">
-						200+ оттенков — от нюда до насыщенной классики от премиального бренда Luxio. Идеальная текстура, гипоаллергенный состав и блеск, который не тускнеет.
-					</p>
-					<a href="#" data-fls-button="" class="button button--text button--icon-arrow button--arrow-ru">Подробнее в ВК</a>
-				</article>
+			<h3 class="selected-work__title selected-work__header">Мы в социальных сетях</h3>
+			<div style="margin-top: 1.3rem;" class="page__skills skills">
+				<div class="skills__container">
+					<?php foreach ($news as $item) : ?>
+						<article data-fls-skill="" class="skill">
+							<h4 class="skill__title">
+								<?= $item['name'] ?>
+							</h4>
+							<p class="skill__text">
+								<?= $item['short_content'] ?>
+							</p>
+							<a href="<?= $item['external_alias'] ?>" data-fls-button="" class="button button--text button--icon-arrow button--arrow-ru">Подробнее<?= $item['social_alias'] ? ' в ' . $item['social_alias'] : ''  ?></a>
+						</article>
+					<?php endforeach; ?>
+				</div>
 			</div>
-		</div>
+
+		<?php endif; ?>
+
 	</div>
 </section>

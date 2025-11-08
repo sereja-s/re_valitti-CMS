@@ -46,7 +46,7 @@
   font-size: 1.15rem;
 }
 .content-about__text p:not(:last-child) {
-  margin-bottom: 1.5625rem;
+  margin-bottom: 0.5625rem;
 }
 .content-about__picture {
   position: relative;

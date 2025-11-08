@@ -80,16 +80,16 @@ class Settings
 	// свойство с таблицами, названия которых будут показаны в боковом меню админки
 	private $projectTables = [
 		'sales' => ['name' => 'Акции'],
-		//'filters' => ['name' => 'Фильтры'],
+		'news' => ['name' => 'Новости (соц.сети)'],
 		'goods' => ['name' => 'Услуги'],
 		'catalog' => ['name' => 'Каталог (меню)'],
 		'fotos' => ['name' => 'Фото'],
 		'foto_categories' => ['name' => 'Категории фото'],
-		'settings' => ['name' => 'Настройки (о сайте)'],
+		'settings' => ['name' => 'Настройки сайта'],
+		'about' => ['name' => 'Страница: О нас'],
 		'advantages' => ['name' => 'Бренды'],
 		'socials' => ['name' => 'Соц.сети'],
-		//'questions' => ['name' => 'Вопросы'],
-		//'information' => ['name' => 'Информация (меню)'],		
+		'information' => ['name' => 'Информация (меню)'],
 	];
 	// свойство с таблицами в которых будет происходить поиск
 	private $searchProjectTables = [
@@ -100,13 +100,13 @@ class Settings
 	// свойство: массив шаблонов
 	private $templateArr = [
 		// массив вида: 'название шаблона' => массив с полями для которых должен быть подключен соответствующий шаблон
-		'text' => ['name', 'phone', 'email', 'address', 'alias', 'external_alias', 'telegram_alias', 'sub_title', 'number_of_years', 'discount', 'price', 'price_m_opt', 'login', 'password'],
+		'text' => ['name', 'phone', 'email', 'address', 'alias', 'external_alias', 'telegram_alias', 'social_alias', 'sub_title', 'title', 'telegram_alias_price', 'data_coordinates', 'discount', 'price', 'author_name', 'about_author', 'login', 'password'],
 		'textarea' => ['content', 'work_time', 'keywords', 'description', 'short_content'],
-		'radio' => ['visible', 'show_top_menu', 'ot', 'new'],
+		'radio' => ['visible', 'ot', 'new'],
 		'checkboxlist' => ['filters', 'filters_test'], // указали, что хотим подключить фильтры к связанной таблице: 
 		// товары (они прописаны в массиве: в свойстве: private $manyToMany)
 		'select' => ['menu_position', 'parent_id'],
-		'img' => ['img', 'main_img', 'img_years', 'promo_img'],
+		'img' => ['img', 'main_img', 'foto_author_img', 'promo_img'],
 		'gallery_img' => ['gallery_img', 'new_gallery_img']
 	];
 
@@ -126,6 +126,7 @@ class Settings
 		'alias' => ['Ссылка ЧПУ'],
 		'external_alias' => ['Внешняя ссылка'],
 		'telegram_alias' => ['Ссылка на телеграм'],
+		'social_alias' => ['В какой соц. сети'],
 		'img' => ['Изображение', '(Одно)'],
 		'main_img' => ['Картинка', '(для ссылки на сайт)'],
 		'gallery_img' => ['галерея изображений', '(Несколько)'],
@@ -133,28 +134,30 @@ class Settings
 		'menu_position' => ['Позиция в списке', '(Расположение в меню)'],
 		'show_top_menu' => ['Показывать в верхнем меню'],
 		'sub_title' => ['Подзаголовок'],
+		'title' => ['Заголовок'],
 		'short_content' => ['Краткое описание'],
-		'img_years' => ['Изображение количества лет на рынке'],
-		'number_of_years' => ['год'],
+		'foto_author_img' => ['Фото автора'],
+		'telegram_alias_price' => ['Ссылка на прайс в Телеграм'],
 		'ot' => ['от', '(включить если цена не конкретная)'],
 		'sale' => ['Акция'],
 		'new' => ['Новинка'],
 		'hot' => ['Горячее предложение'],
 		'discount' => ['Скидка'],
 		'price' => ['Цена'],
-		'price_m_opt' => ['Цена (мелкий опт)'],
+		'author_name' => ['Автор'],
+		'about_author' => ['Об авторе'],
 		'parent_id' => ['Выбрать категорию', '(К чему относится?)'],
 		'promo_img' => ['Изображение для главной страницы'],
 		'login' => ['Логин'],
 		'password' => ['Пароль'],
 		'work_time' => ['График работы'],
+		'data_coordinates' => ['Координаты на карте'],
 		//'filters' => ['Категории фильтров']
 	];
 
 	// св-во, в котором будут храниться значения для input type radio (кнопок переключателей (да, нет и т.д.))
 	private $radio = [
 		'visible' => ['НЕТ', 'ДА', 'default' => 'ДА'],
-		'show_top_menu' => ['НЕТ', 'ДА', 'default' => 'ДА'],
 		'ot' => ['НЕТ', 'ДА', 'default' => 'НЕТ'],
 		'sale' => ['НЕТ', 'ДА', 'default' => 'НЕТ'],
 		'new' => ['НЕТ', 'ДА', 'default' => 'НЕТ'],
@@ -179,7 +182,7 @@ class Settings
 	// (по умолчанию содержимое разделов адмики занимает левый блок: vg-rows) 
 	private $blockNeedle = [
 		'vg-rows' => [],
-		'vg-img' => ['img', 'main_img', 'gallery_img', 'img_years', 'number_of_years', 'promo_img'],
+		'vg-img' => ['img', 'main_img', 'gallery_img', 'foto_author_img', 'promo_img'],
 		'vg-content' => ['content']
 	];
 

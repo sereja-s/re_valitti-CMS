@@ -6,9 +6,9 @@
   padding-top: 2rem;
 }
 .social-blocks__link {
-  color: white;
-  font-family: "Satoshi", sans-serif;
-  font-size: 0.8125rem;
+  color: white;  
+  font-size: 1rem;
+  font-weight: 700;
   line-height: 1.7;
   letter-spacing: 0.09375rem;
   text-transform: uppercase;

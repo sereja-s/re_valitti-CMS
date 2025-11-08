@@ -1,122 +1,476 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap/xsd">
   <url>
-    <loc>https://dss-krovlya.ru</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/catalog/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/catalog/parikmaher-stilist-dlya-ledi/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/catalog/parikmaher-stilist-dlya-dzhentlmena/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/catalog/parikmaher-stilist-dlya-detey/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/catalog/nogtevoy-servis/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/catalog/oformlenie-brovey-i-resnits/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/catalog/massazh/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/catalog/esteticheskaya-kosmetologiya/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/about/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/catalog/stekloizol/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/catalogFoto/zhenskie-prichyoski/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/catalog/steklokrom/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/catalogFoto/muzhskie-strizhki/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/catalog/praymer-bitumniy/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/catalogFoto/detskie-strizhki/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/catalog/mastika-bitumnaya/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/catalogFoto/manikyur-i-pedikyur/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/catalog/konek-otsinkovanniy/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/catalogFoto/brovi-i-resnitsy/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/information/novosti/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/information/rekvizity/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/information/oplata-i-dostavka/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/product/strizhka-volos-strizhka-ukladka/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/product/stekloizol-p-25-stekloholst/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/product/strizhka-bez-preparatov-okrashivanie-uhod/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/product/stekloizol-p-25-steklotkan/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/product/ukladka-povsednevnaya-stayling-vklyuchen/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/product/stekloizol-k-35-steklotkan/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/product/oformlenie-chelki/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/product/stekloizol-k-40-steklotkan/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/product/strizhka-goryachimi-nozhnitsami-bez-mytya-golovy/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/product/stekloizol-k-45-steklotkan/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/product/vypryamlenie-volos-schiptsami-nakrutka-na-schiptsy-bez-mytya-golovy/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/product/steklokrom-k-40-steklotkan/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/product/vechernyaya-ukladka-pricheska/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/product/steklokrom-k-40-poliester/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/product/pletenie-kos-prostoe-slozhnoe/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/product/praymer-bitumniy/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/product/okrashivanie-inoa-loreal-kydra/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/product/mastika-holodnaya-bitumnaya/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/product/okrashivanie-korney-do-30-gr-kraski/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/product/mastika-holodnaya-bitumnaya-108/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/product/tonirovanie/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dss-krovlya.ru/product/konek-otsinkovanniy/</loc>
-    <lastmod>2024-05-31T19:36:16+01:00</lastmod>
+    <loc>http://cms-re-valitti/product/polnoe-okrashivanie/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/slozhnoe-okrashivanie-airtouch-shatush-ombre-balayazh-melirovanie-volos/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/make-up-dlya-volos-sweet-color/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/uhod-za-volosami-s-olaplex/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/uhod-za-volosami-s-tokio-inkarami/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/strizhka-volos/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/kamuflirovanie-sediny/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/strizhka-volos-dlya-malchikov-do-12-let/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/strizhka-volos-dlya-malchikov-do-12-let-bez-mytya-golovy/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/strizhka-volos-dlya-devochek-do-12-let/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/strizhka-volos-dlya-devochek-do-12-let-bez-mytya-golovy/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/naraschivanie-i-ukreplenie-nogtey-cnd/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/naraschivanie-nogtey-cnd-french/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/naraschivanie-nogtey-luxio/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/vykladnoy-french/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/korrektsiya-nogtey-cnd-french/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/korrektsiya-nogtey-luxio/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/ukreplenie-nogtey-smoothing-gel/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/ukreplenie-nogtey-bazoy-luxio/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/korrektsiya-nogtey-sota-french/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/ukreplenie-nogtey-bazoy-sota/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/manikyur-zhenskiy/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/manikyur-detskiy-do-11-let/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/yaponskiy-manikyur/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/ekspress-uhod/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/pokrytie-lechebnym-lakom/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/pokrytie-nogtey-gel-lak-shellac-luxio/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/skrabirovanie-ruk/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/ekspress-uhod-dlya-nog/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/obrabotka-paltsev/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/spa-uhod-cnd-stopy-do-kolen/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/parafinovye-sapozhki-krem/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/botoks-brovey/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/udalenie-pushkovyh-volos/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/laminirovanie-resnits/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/dizayn-brovey/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/dolgovremennaya-ukladka-brovey/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/dizayn-brovey-s-osvetleniem/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/ekspress-makiyazh/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/massazh-tela-obschiy-antistressoviy-relaks/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/massazh-spina-sheya-45-min/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/massazh-yagoditsy-bedra-ikry-stopy-45-min/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/massazh-limfodrenazhniy-antitsellyulitniy/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/massazh-golovy-30-min/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/stoun-terapiya-goryachimi-kamnyami-90-min/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/chistka-litsa/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/himicheskie-pilingi/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/bioline-litso/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/styx-telo/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/arosha-telo/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/uhod-telo/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/epilyatsiya-zhenskaya/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://cms-re-valitti/product/epilyatsiya-muzhskaya/</loc>
+    <lastmod>2025-11-08T14:16:15+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>

@@ -91,8 +91,6 @@
 							left: 0;
 							top: 20px;
 							box-shadow: 0 8px 6px -6px #999;
-							/* background-color: rgba(218, 197, 167, 0.05);
-								backdrop-filter: blur(1.875rem); */
 							padding: 20px 0 0 0;
 						}
 
@@ -147,7 +145,7 @@
 						}
 					</style>
 
-					<a href="contacts" data-fls-button="" class="header__button button button--lite">Позвонить</a>
+					<a href="tel:<?= preg_replace('/[^+\d]/', '', $this->set['phone']) ?>" data-fls-button="" class="header__button button button--lite">Позвонить</a>
 					<button type="button" data-fls-menu="" class="icon-menu">
 						<span></span>
 					</button>
