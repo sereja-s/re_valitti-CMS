@@ -20,7 +20,13 @@ class ProductController extends BaseUser
 		}
 
 		$data = $this->model->getGoods([
-			'where' => ['alias' => $this->parameters['alias'], 'visible' => 1]
+			'where' => ['alias' => $this->parameters['alias'], 'visible' => 1],
+			'join' => [
+				'catalog' => [
+					'fields' => ['name as catalog_name', 'alias as catalog_alias'],
+					'on' => ['parent_id', 'id'],
+				]
+			]
 		]);
 
 		if (!$data) {
@@ -29,6 +35,8 @@ class ProductController extends BaseUser
 		}
 
 		$data = array_shift($data);
+		$data['catalog'] = array_shift($data['join']['catalog']);
+		unset($data['join']);
 
 		return compact('data');
 	}

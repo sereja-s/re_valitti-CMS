@@ -9,8 +9,11 @@
 	<meta name="keywords" content="<?= $data['name'] ? $data['name'] . ', ' : '' ?><?= $this->set['meta_keywords'] ?>">
 
 	<meta property="og:title" content="<?= $this->set['meta_title'] ?><?= $data['name'] ? ' | ' . $data['name'] : '' ?>" />
-	<meta property="og:description" content="<?= $this->set['meta_og_desc'] . ', ' . $this->set['phone'] ?>" />
-	<meta property="og:image" content="<?= $this->img($this->set['img']) ?>" />
+	<meta property="og:description" content="<?= $data['name'] ? $data['name'] . '. ' : '' ?><?= $this->set['meta_og_desc'] . ', ' . $this->set['phone'] ?>" />
+
+	<meta property="og:image" content="<?= SITE_URL . $this->img($this->set['img']) ?>" />
+
+	<!-- <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Marilyn_Monroe_-_publicity.JPG/210px-Marilyn_Monroe_-_publicity.JPG"/> -->
 
 	<link rel="icon" href="https://revalitti.ru/favicon.ico" type="image/x-icon">
 

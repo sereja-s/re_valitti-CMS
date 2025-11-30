@@ -105,7 +105,7 @@
 			<div class="bottom-footer__copy">Данный сайт носит исключительно информационный характер и ни при каких обстоятельствах не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ.</div>
 			<div class="bottom-footer__copy">© <?= date('Y') ?></div>
 			<!-- <a href="#" data-fls-scrollto="main" data-fls-button="" class="bottom-footer__button button button--text button--text-big button--text-rev button--icon-arrow"></a> -->
-			<a href="<?= $this->set['external_alias'] ?>" class="bottom-footer__button button button--text button--text-big button--text-rev"> Сделано в САЙТ ПОСТРОЕН</a>
+			<a href="<?= $this->set['external_alias'] ?>" class="bottom-footer__button button"> Сделано в САЙТ ПОСТРОЕН</a>
 		</div>
 	</div>
 </footer>

@@ -18,7 +18,7 @@
 						</h1>
 						<div class="blockhead__text">
 
-							<?= $data['content'] ?>
+							<?= $data['keywords'] ?>
 
 						</div>
 					</div>
@@ -43,11 +43,11 @@
 										<td><a href="<?= $this->alias(['product' => $item['alias']]) ?>" data-fls-scrollto=".content-about" data-fls-scrollto-top="150" data-fls-button="" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d"></a></td>
 									</tr>
 								<?php endforeach; ?>
-
 							</table>
 						</section>
 					</div>
 				<?php endif; ?>
+				<div style="padding-top: 2rem;" class="content-about__text"><?= $data['content'] ?></div>
 			</div>
 
 

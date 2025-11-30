@@ -31,7 +31,18 @@
 				</div>
 				<div class="item-service__label"><?= ($data['price'] || $data['content']) ? 'Цена, руб.' : '' ?></div>
 				<div class="item-service__price"><?= $data['ot'] ? $data['content'] : $data['price'] ?></div>
-				<div class="item-service__description"><?= $data['description'] ?></div>
+				<div class="content-about__text"><?= $data['description'] ?></div>
+
+				<div style="text-align: center;">
+					<div style="font-size: 1.25rem;">Подробнее о предоставляемых услугах и цены в разделе</div><br>
+					<a href="<?= $this->alias(['catalog' => $data['catalog']['catalog_alias']]) ?>" style="font-weight: 700; font-size: 1.1rem; line-height: 1.3;" class="about__button button button--text button--text-big button--icon-arrow button--arrow-d"><?= $data['catalog']['catalog_name'] ?></a>
+				</div>
+
+				<div style="font-size: 1.375rem;" class="content-about__text"><span style="color: darkorange;"><?= $data['name'] ?> в <?= $this->set['name'] ?>.</span> Каждое прикосновение — с вниманием к деталям и уважением к вашей индивидуальности.</div>
+
+				<div style="font-size: 1.375rem;" class="content-about__text">Ждём вас по адресу <?= $this->set['address'] ?></div>
+
+				<?= $this->telegramTelefon ?>
 
 			</article>
 

@@ -513,8 +513,8 @@ body {
   aspect-ratio: 1;
   text-align: center;
   align-content: center;
-  border: 0.0325rem solid rgba(255, 182, 143, 0.603);
-  background-color: rgba(218, 197, 167, 0.05);
+  border: 0.1rem solid rgb(250, 145, 89);
+  background-color: rgba(255, 182, 143, 0.05);
   border-radius: 50%;
   transition: all 0.5s;
 }
